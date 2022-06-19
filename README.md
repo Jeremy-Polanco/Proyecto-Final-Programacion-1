@@ -11,7 +11,7 @@ instalados en tu computadora. Desde tu interfaz de línea de comandos
 
 ```bash
 # Clonar este repositorio
-$ git clone https://github.com/your-user-name/your-project-name
+$ git clone git@github.com:Jeremy-Polanco/GUI.git
 
 # Installar dependencias
 $ npm install
