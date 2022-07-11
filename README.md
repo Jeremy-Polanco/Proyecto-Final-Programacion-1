@@ -2,9 +2,13 @@
 
 Este projecto fue arrancado con [Create React App](https://github.com/facebook/create-react-app).
 
-Esta página se encuentra en : [Link directo](https://gui-programacion-1.netlify.app/)
+### Construido Con
+- [React](https://reactjs.org/)
+- [Express](https://expressjs.com/)
+- [Styled Components](https://styled-components.com/)
+- [MongoDB](https://www.mongodb.com/docs/)
 
-## How To Use
+## Como usarlo
 
 Para clonar y correr esta aplicacion, se necesita [Git](https://git-scm.com) y [Node.js](https://nodejs.org/en/download/) (el cual viene con [npm](http://npmjs.com))
 instalados en tu computadora. Desde tu interfaz de línea de comandos
