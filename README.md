@@ -1,4 +1,4 @@
-# Interfaz gráfica para el Usuario
+# Proyecto Programacion 
 
 Este projecto fue arrancado con [Create React App](https://github.com/facebook/create-react-app).
 
