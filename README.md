@@ -2,8 +2,10 @@
 
 Este projecto fue arrancado con [Create React App](https://github.com/facebook/create-react-app).
 
+Link directo : [proyecto final](https://authorization-app-mern.herokuapp.com/register)
+
 ### Construido Con
-- [React](https://reactjs.org/)
+- [JavaScript](https://developer.mozilla.org/en-US/docs/Web/javascript)
 - [Express](https://expressjs.com/)
 - [Styled Components](https://styled-components.com/)
 - [MongoDB](https://www.mongodb.com/docs/)
