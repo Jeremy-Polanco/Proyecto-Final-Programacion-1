@@ -11,6 +11,9 @@ const app = express();
 // packages
 import morgan from 'morgan';
 import hbs from 'hbs';
+import xss from 'xss-clean';
+import mongoSanitize from 'express-mongo-sanitize';
+
 if (process.env.NODE_ENV !== 'production') {
   app.use(morgan('dev'));
 }
@@ -34,15 +37,17 @@ import authRouter from './routes/authRoutes.js';
 import userRouter from './routes/userRoutes.js';
 
 // middleware
-app.use(express.static('public'));
-app.use(fileUpload({ useTempFiles: true }));
-
 import notFoundMiddleware from './middlewares/not-found.js';
 import errorHandlerMiddleware from './middlewares/error-handler.js';
 
 app.use(cookieParser(process.env.JWT_SECRET));
 
+app.use(xss());
+app.use(mongoSanitize());
+app.use(express.static('public'));
+
 app.use(express.json());
+app.use(fileUpload({ useTempFiles: true }));
 
 app.set('view engine', 'hbs');
 app.set('views', './views');
